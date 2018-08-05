@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="listSeparatorWidth">2dp</dimen>
+    <dimen name="defaultColumnWidth">160dp</dimen>
+    <dimen name="detailsHorizontalPadding">8dp</dimen>
+    <dimen name="wikiVerticalPadding">8dp</dimen>
+    <dimen name="avatarPreviewSize">202dp</dimen>
+
+    <integer name="numberOfColumns">2</integer>
+</resources>

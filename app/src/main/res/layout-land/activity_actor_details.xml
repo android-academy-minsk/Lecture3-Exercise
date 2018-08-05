@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="androidacademy.minsk.lecture3exercise.ActorDetailsActivity">
+
+    <ImageView
+        android:id="@+id/photoView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars"/>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/photoView"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/wikiInfoView"
+            style="@style/WikiArticleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/detailsHorizontalPadding"
+            android:layout_marginStart="@dimen/detailsHorizontalPadding"
+            android:paddingBottom="@dimen/wikiVerticalPadding"
+            android:paddingTop="@dimen/wikiVerticalPadding"
+            tools:text="A very interesting wiki article about current artist."/>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
